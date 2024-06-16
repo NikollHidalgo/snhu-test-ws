@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+}
+
+/* Estilos para la página de confirmación */
+.informacion-reserva {
+    margin-bottom: 20px;
+}
+
+.informacion-reserva h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.informacion-reserva p {
+    margin-bottom: 5px;
+}
+
+#lista-pasajeros, #lista-vuelos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#lista-pasajeros li, #lista-vuelos li {
+    margin-bottom: 5px;
+}
+
+.metodo-pago {
+    margin-bottom: 20px;
+}
+
+.opciones-pago {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* Para evitar espacios entre opciones */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.informacion-reserva {
+    margin-bottom: 20px;
+}
+
+.informacion-reserva h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.informacion-reserva p {
+    margin-bottom: 5px;
+}
+
+#lista-pasajeros, #lista-vuelos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#lista-pasajeros li, #lista-vuelos li {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+}
+
+.metodo-pago {
+    margin-bottom: 20px;
+}
+
+.opciones-pago {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* Para evitar espacios entre opciones */
+}
+
+.opciones-pago input[type="radio"] {
+    margin-right: 10px;
+}
+
+.opciones-pago label {
+    cursor: pointer;
+}
+
+.monto-total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}

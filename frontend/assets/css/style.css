@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#resultados-busqueda {
+    margin-top: 20px;
+}
+
+.vuelo {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.vuelo h2 {
+    margin-top: 0;
+}
+
+.vuelo .datos {
+    margin-bottom: 10px;
+}
+
+.vuelo .datos span {
+    font-weight: bold;
+}
+
+.vuelo .precio {
+    text-align: right;
+}
+
+
+/* Estilos específicos para la tabla de vuelos */
+#resultados-busqueda {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#detalles-vuelos {
+    width: 100%;
+    margin-top: 0;
+}
+
+#detalles-vuelos th {
+    font-weight: bold;
+}
+
+#detalles-vuelos tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}

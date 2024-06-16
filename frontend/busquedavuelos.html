@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Búsqueda de vuelos</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <h1>Búsqueda de vuelos</h1>
+
+  <form id="formulario-busqueda">
+    <div class="campo">
+      <label for="origen">Origen:</label>
+      <input type="text" id="origen" name="origen" placeholder="Ej: Bogotá, Colombia" required>
+      <ul id="sugerencias-origen" class="sugerencias"></ul>
+    </div>
+    <div class="campo">
+      <label for="destino">Destino:</label>
+      <input type="text" id="destino" name="destino" placeholder="Ej: Miami, USA" required>
+      <ul id="sugerencias-destino" class="sugerencias"></ul>
+    </div>
+    <div class="campo">
+      <label for="tipo-cabina">Tipo de cabina:</label>
+      <div class="botones-cabina">
+        <button type="button" id="cabina-economy" name="tipo-cabina" value="economy">Economy</button>
+        <button type="button" id="cabina-business" name="tipo-cabina" value="business">Business</button>
+        <button type="button" id="cabina-first" name="tipo-cabina" value="first">First</button>
+      </div>
+      <input type="hidden" id="tipo-cabina-seleccionada" name="tipo-cabina" value="economy">
+    </div>
+    <div class="campo">
+      <label for="fecha-salida">Fecha de salida:</label>
+      <input type="date" id="fecha-salida" name="fecha-salida" required>
+    </div>
+    <div class="campo">
+      <label for="fecha-regreso">Fecha de regreso (opcional):</label>
+      <input type="date" id="fecha-regreso" name="fecha-regreso">
+    </div>
+    <div class="campo">
+      <input type="checkbox" id="retorno" name="retorno">
+      <label for="retorno">Retorno</label>
+    </div>
+    <div class="campo">
+      <input type="checkbox" id="solo-ida" name="solo-ida">
+      <label for="solo-ida">Solo ida</label>
+    </div>
+    <button type="submit">Buscar</button>
+  </form>
+
+  <div id="resultados-busqueda">
+    <h2>Resultados de búsqueda</h2>
+    <table id="detalles-vuelos">
+      <thead>
+        <tr>
+          <th>Origen</th>
+          <th>Destino</th>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Número de Vuelo</th>
+          <th>Precio Cabina</th>
+        </tr>
+      </thead>
+      <tbody>
+        </tbody>
+    </table>
+  </div>
+
+  <script src="/js/flight search.js"></script>
+</body>
+</html>

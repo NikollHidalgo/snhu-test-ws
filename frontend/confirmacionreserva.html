@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de reserva</title>
+    <link rel="stylesheet" href="/assets/css/reserva.css">
+</head>
+<body>
+    <h1>Confirmación de reserva</h1>
+
+    <div id="detalles-vuelo">
+        <h2>Detalles del vuelo</h2>
+        <div class="vuelo">
+            <h3>Ida</h3>
+            <p>Aerolínea: LATAM</p>
+            <p>Origen: Neiva - Areopuerto Benito Salas</p>
+            <p>Destino: Bogotá - Areopuerto El Dorado</p>
+            <p>Fecha: 25-06-2024</p>
+            <p>Hora: 8:00 pm</p>
+        </div>
+        <div class="vuelo">
+            <h3>Regreso</h3>
+            <p>Aerolínea: AVIANCA</p>
+            <p>Origen: Bogotá - Aeropuerto El Dorado</p>
+            <p>Destino: Neiva - Aeropuerto Benito Salas</p>
+            <p>Fecha: 10-07-2024 </p>
+            <p>Hora: 6:00 pm </p>
+        </div>
+    </div>
+
+    <div id="pasajeros">
+        <h2>Información de pasajeros</h2>
+        <form id="formulario-pasajero">
+            <div class="campo">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+                <label for="tipo-documento">Tipo de documento:</label>
+                <select id="tipo-documento" name="tipo-documento" required>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="P">Pasaporte</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="numero-documento">Número de documento:</label>
+                <input type="text" id="numero-documento" name="numero-documento" required>
+            </div>
+            <div class="campo">
+                <label for="pais-pasaporte">País de pasaporte:</label>
+                <select id="pais-pasaporte" name="pais-pasaporte" required>
+                    <option value="opcion1">Albania</option>
+                    <option value="opcion2">Andorra</option>
+                     <option value="opcion3">Bélgica</option>
+                     <option value="opcion4">Croacia</option>
+                    </select>
+            </div>
+            <div class="campo">
+                <label for="foto-pasaporte">Foto de pasaporte:</label>
+                <div class="imagen-pasaporte">
+                    <img id="imagen-pasaporte-src" src="" alt="Imagen de pasaporte">
+                    <span class="eliminar-pasaporte">X</span>
+                </div>
+                <input type="file" id="foto-pasaporte" name="foto-pasaporte" required>
+            </div>
+            <button type="button" id="agregar-pasajero">Agregar pasajero</button>
+        </form>
+
+        <ul id="lista-pasajeros">
+            </ul>
+    </div>
+
+    <button type="button" id="confirmar-reserva">Confirmar reserva</button>
+
+    <script src="/js/confirmacionreserva.js"></script>
+</body>
+</html>

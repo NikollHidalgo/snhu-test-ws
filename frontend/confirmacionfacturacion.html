@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmación de Facturación</title>
+  <link rel="stylesheet" href="/assets/css/factura.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CONFIRMACIÓN DE FACTURACIÓN</h1>
+
+    <div class="informacion-reserva">
+      <h2>Detalles de la reserva</h2>
+      <p>Referencia de la reserva: <span id="referencia-reserva"></span></p>
+      <div class="pasajeros">
+        <h3>Pasajeros</h3>
+        <ul id="lista-pasajeros"></ul>
+      </div>
+      <div class="vuelos">
+        <h3>Vuelos</h3>
+        <ul id="lista-vuelos"></ul>
+      </div>
+      <div class="monto-total">
+        <p>Monto total a pagar: <span id="monto-total"></span></p>
+      </div>
+    </div>
+
+    <div class="metodo-pago">
+      <h2>Método de pago</h2>
+      <div class="opciones-pago">
+        <input type="radio" id="tarjeta-credito" name="metodo-pago" value="tarjeta-credito">
+        <label for="tarjeta-credito">Tarjeta de crédito</label>
+        <input type="radio" id="efectivo" name="metodo-pago" value="efectivo">
+        <label for="efectivo">Efectivo</label>
+        <input type="radio" id="comprobante-pago" name="metodo-pago" value="comprobante-pago">
+        <label for="comprobante-pago">Comprobante de pago</label>
+      </div>
+    </div>
+
+    <div class="acciones">
+      <button id="btn-emitir-boletos">Emitir Boletos</button>
+      <button id="btn-cancelar">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="/js/confirmacionfacturacion.js"></script>
+</body>
+</html>

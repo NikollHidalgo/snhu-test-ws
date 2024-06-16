@@ -1,0 +1,196 @@
+body {
+    font-family: sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.vuelo {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.vuelo h3 {
+    margin-top: 0;
+}
+
+.vuelo .datos {
+    margin-bottom: 10px;
+}
+
+.vuelo .datos span {
+    font-weight: bold;
+}
+
+#pasajeros {
+    margin-top: 20px;
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: normal 16px/1.5 "Arial", sans-serif;
+}
+
+/* Estilos generales */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de detalles del vuelo */
+#detalles-vuelo {
+    margin-bottom: 40px;
+}
+
+.vuelo {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.vuelo h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.vuelo p {
+    margin-bottom: 5px;
+}
+
+/* Sección de información de pasajeros */
+#pasajeros {
+    margin-bottom: 40px;
+}
+
+#pasajeros h2 {
+    font-size: 18px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#lista-pasajeros {
+    list-style: none; /* Eliminar viñetas por defecto */
+    padding: 0;
+}
+
+#lista-pasajeros li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#lista-pasajeros li:last-child {
+    border-bottom: none;
+}
+
+#lista-pasajeros th {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#lista-pasajeros td {
+    padding: 10px;
+}
+
+#lista-pasajeros .eliminar-pasajero {
+    cursor: pointer;
+    color: #ff0000; /* Rojo para indicar eliminación */
+}
+
+#lista-pasajeros .eliminar-pasajero:hover {
+    color: #c00; /* Rojo más intenso al pasar el cursor */
+}
+
+#detalles-vuelo h2,
+#pasajeros h2 {
+    font-weight: bold; /* Aplicar negrita */
+}
+
+.imagen-pasaporte {
+    display: none; /* Oculto inicialmente */
+    position: relative; /* Para posicionar el botón "X" */
+    margin-top: 10px;
+}
+
+.imagen-pasaporte img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto */
+    margin-right: 10px; /* Espacio entre la imagen y el botón */
+}
+
+.eliminar-pasaporte {
+    cursor: pointer;
+    color: #ff0000; /* Rojo para indicar eliminación */
+    font-size: 20px;
+    vertical-align: middle; /* Alinear verticalmente con la imagen */
+}
+
+.eliminar-pasaporte:hover {
+    color: #c00; /* Rojo más intenso al pasar el cursor */
+}
